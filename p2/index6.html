@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Ejemplo 2 de Font-Size</title>
+    <style>
+      body{
+        font-size:20px;
+      }
+      .absolute16{
+        font-size:16px;
+      }
+      .absolute32{
+        font-size:32px;
+        color:#215abc;
+      }
+      .relative1em{
+        font-size:1em;
+        color:#175b18;
+      }
+      .relative2em{
+        font-size:2em;
+        color:#0f5156;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejemplo de Font Size Absolutos y Relativos</h1>
+    <div class="absolute16">
+      Esto es un texto a 16 px absolutos
+    </div>
+    <div class="absolute32">
+      Esto es un texto a 32 px absolutos
+    </div>
+    <div class="relative1em">
+      Esto es un texto a 1 em relativo
+    </div>
+    <div class="relative2em">
+      Esto es un texto a 2 em relativo
+    </div>
+    <div class="relative2em">
+      <div class="relative2em">
+        <div class="relative1em">
+          Esto es un texto a 1 em relativo
+        </div>
+        <div class="relative2em">
+          Esto es un texto a 2 em relativo
+        </div>
+
+      </div>
+    </div>
+    <div class="relative2em">
+        <div class="absolute16">
+          Esto es un texto a 16 px absolutos
+        </div>
+        <div class="absolute32">
+          Esto es un texto a 32 px absolutos
+        </div>
+    </div>
+
+    <pre>
+        tamaño en pixeles = x em * pixel base padre 
+
+    </pre>
+  </body>
+</html>

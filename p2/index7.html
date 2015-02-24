@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Ejemplo de Fonts Relativos</title>
+    <style>
+      body{
+        font-size:8px;
+      }
+      h1{
+        font-size:8em; /* 64/8  */
+      }
+      p{
+        font-size: 1.25em; /* px deseado / px base = em  */
+      }
+      div{
+        font-size: 2.5em; /* 20/8 */
+      }
+      div p{
+        font-size:1.2em ; /* 24/20 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1> Esto 64px </h1>
+    <p>
+      este elemento en 10px
+    </p>
+    <div>
+      esto a 20px
+      <p>
+        esto a 24 px
+      </p>
+    </div>
+  </body>
+</html>
