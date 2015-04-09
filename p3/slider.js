@@ -1,9 +1,16 @@
 var imagenes = new Array();
 var current = 0;
+var changed = false;
+
 function inicializarSlider(){
   imagenes = document.getElementsByClassName("img");
   imagenes[1].style.opacity = "0";
   imagenes[2].style.opacity = "0";
+}
+
+function imgclick(index){
+  changed = true;
+  return showImage(index);
 }
 
 function showImage(index){
@@ -28,3 +35,16 @@ function showImage(index){
   }
   return false;
 }
+
+function tick(){
+  if(changed){
+    changed = false;
+    setTimeout(tick, 5000);
+  }else{
+    console.log(current);
+    showImage((current==2)?1:current+2);
+    setTimeout(tick, 5000);
+  }
+}
+
+setTimeout(tick, 5000);
