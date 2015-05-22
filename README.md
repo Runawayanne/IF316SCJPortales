@@ -3,6 +3,7 @@ Este es un respositorio de los ejemplo y documentación
 elaborada en el aula de clase como referencia que
 puede utilizar el alumno.
 Los objetivos del curso son lograr que el alumno al terminar el curso:
+
 1. Estructure un documento HTML bien
 formado que pase la verificación en https://validator.w3.org/
 
