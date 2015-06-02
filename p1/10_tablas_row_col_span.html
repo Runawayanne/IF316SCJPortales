@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Manejo de Row Span y Col Span</title>
+  </head>
+  <body>
+    <h1>Manejo de Row y Col Span en tablas</h1>
+    <p>
+        Cuando hay momento en que una tabla
+        debe agrupar varias celdas para mostrar
+        de forma más clara la información es
+        necesario crear agrupaciones de celdas
+        que permitan percibir la agrupación de la
+        data.
+    </p>
+    <h2>Agrupación por Columnas</h2>
+    <table border="1">
+        <tr>
+            <th colspan="7">
+                Ventas del Año
+            </th>
+        </tr>
+        <tr>
+            <th>
+
+            </th>
+            <th colspan="2">
+                Primer Trimestre
+            </th>
+            <th colspan="2">
+                Segundo Trimestre
+            </th>
+            <th colspan="2">
+                Tercer Trimestre
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Vendedor
+            </th>
+            <th>
+                Inicio
+            </th>
+            <th>
+                Final
+            </th>
+            <th>
+                Inicio
+            </th>
+            <th>
+                Final
+            </th>
+            <th>
+                Inicio
+            </th>
+            <th>
+                Final
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Colega 1
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                100
+            </td>
+            <td>
+                120
+            </td>
+            <td>
+                120
+            </td>
+            <td>
+                180
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Colega 2
+            </td>
+            <td>
+                0
+            </td>
+            <td>
+                90
+            </td>
+            <td>
+                90
+            </td>
+            <td>
+                150
+            </td>
+            <td>
+                150
+            </td>
+            <td>
+                280
+            </td>
+        </tr>
+    </table>
+    <h2>Agrupación por Filas</h2>
+    <table border="1">
+        <tr>
+            <th>
+                Zona
+            </th>
+            <th>
+                Distrito
+            </th>
+            <th>
+                Municipio
+            </th>
+            <th>
+                Q1
+            </th>
+            <th>
+                Q2
+            </th>
+            <th>
+                Q3
+            </th>
+            <th>
+                Q4
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                Centro Norte
+            </td>
+            <td rowspan="2">
+                Fco Morazán
+            </td>
+            <td>
+                Tegucigalpa
+            </td>
+            <td>
+                90%
+            </td>
+            <td>
+                89%
+            </td>
+            <td>
+                95%
+            </td>
+            <td>
+                93%
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                Zamorano
+            </td>
+            <td>
+                90%
+            </td>
+            <td>
+                89%
+            </td>
+            <td>
+                95%
+            </td>
+            <td>
+                93%
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Cortés
+            </td>
+            <td>
+                San Pedro Sula
+            </td>
+            <td>
+                90%
+            </td>
+            <td>
+                89%
+            </td>
+            <td>
+                95%
+            </td>
+            <td>
+                93%
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                Cortés
+            </td>
+            <td>
+                90%
+            </td>
+            <td>
+                89%
+            </td>
+            <td>
+                95%
+            </td>
+            <td>
+                93%
+            </td>
+        </tr>
+    </table>
+  </body>
+</html>
