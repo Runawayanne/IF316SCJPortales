@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Fomrularios en HTML</title>
+  </head>
+  <body>
+      <h1>Formularios en HTML</h1>
+      <form action="11_formularios.html"
+            method="post"
+      >
+      <!--Existe varios metodos http para
+      enviar información de un formulario
+            - get
+            - post
+            - put
+            - delete
+      -->
+          <label for="txtPrimerNombre">
+              Primer Nombre
+          </label>
+          <input type="text"
+                 name="txtPrimerNombre"
+                 id="txtPrimerNombre" />
+                 <br/>
+         <label for="txtSegundoNombre">
+             Segundo Nombre
+         </label>
+         <input type="text"
+                name="txtSegundoNombre"
+                id="txtSegundoNombre" />
+         <br/>
+         <label for="cmbGenero">Género</label>
+         <select name="cmbGenero" id="cmbGenero">
+             <option value="M">Masculino</option>
+             <option value="F" selected="selected">Femenino</option>
+         </select>
+         <br/>
+         <label for="txtCorreoElectronico">
+             Correo Electrónico
+         </label>
+         <input type="email"
+                name="txtCorreoElectronico"
+                id="txtCorreoElectronico" />
+         <br/>
+         <label>Seleccione un color</label>
+         <br/>
+         <input type="radio" name="opcColor"
+            value="F00"/> Rojo
+          <input type="radio" name="opcColor"
+           value="00F"/> Azul
+          <input type="radio" name="opcColor"
+              value="0F0"/> Verde
+        </br>
+
+        <label>Mejor Equipo</label>
+        <br/>
+        <input type="radio" name="opcEquipo"
+           value="Olimpia"/> Olimpia
+         <input type="radio" name="opcEquipo"
+          value="Motagua"/> Motagua
+         <input type="radio" name="opcEquipo"
+             value="Maraton"/> Maratón
+         <input type="radio" name="opcEquipo"
+            value="Victoria"/> Victoria
+         <input type="radio" name="opcEquipo"
+             value="Real España"/> Real España
+       </br>
+       <label>Lugares Favoritos</label>
+       <ul>
+           <li>
+               <input type="checkbox"
+                    name="opcTegus" value="tgu"/>
+                    Tegucigalpa
+           </li>
+           <li>
+               <input type="checkbox"
+                    name="opcSPS" value="sps"/>
+                    San Pedro Sula
+           </li>
+           <li>
+               <input type="checkbox"
+                    name="opcCHL" value="chl"/>
+                    Choluteca
+           </li>
+           <li>
+               <input type="checkbox"
+                    name="opcSRC" value="src"/>
+                    Santa Rosa de Copán
+           </li>
+        </ul>
+        <label>Texto largo</label>
+        <br/>
+        <textarea id="txtLargo" name="txtLargo"></textarea>
+        <br/>
+        <input type="hidden" name="valorEscondido"
+            value="AlgunValor"/>
+         <input type="submit"
+            id="btnEnviar"
+            name="btnEnviar"
+            value="Enviar" />
+      </form>
+
+      <div>
+          <a href="http://www.w3schools.com/tags/att_input_type.asp"
+             target="_blank" >
+                Tipos de Input
+          </a>
+      </div>
+  </body>
+</html>
