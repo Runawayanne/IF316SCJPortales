@@ -1,0 +1,24 @@
+body{
+    background-color: #A5D6A7 ;
+    font-family: "Comic Sans MS" "Arial" sans-serif;
+    font-size: 16px;
+    font-size:100%;
+    font-size:1em;
+}
+
+.contenedor{
+    font-size: 1em;
+}
+.tarea{
+    background-color: #43A047;
+    /*padding:1em;*/
+    /*padding:2em 1em;*/
+    /* trbl  top right bottom left*/
+    padding: 3em 5em 1em 2em;
+    border:0.125em dotted black;
+}
+.titulo{
+    font-size:1.25em;
+    font-weight:bold;
+    text-decoration: underline;
+}
