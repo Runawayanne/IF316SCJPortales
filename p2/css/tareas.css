@@ -4,6 +4,7 @@ body{
     font-size: 16px;
     font-size:100%;
     font-size:1em;
+    padding:1.31em;
 }
 
 .contenedor{
@@ -15,10 +16,49 @@ body{
     /*padding:2em 1em;*/
     /* trbl  top right bottom left*/
     padding: 3em 5em 1em 2em;
-    border:0.125em dotted black;
+    /*border:0.125em dotted black;*/
+    border-width: 2px 4px;
+    border-style: dashed solid;
+    border-color: red black;
+    border-radius: 10px;
+    margin:0.5em 1em;
+    width:38%;
+    height:220px;
 }
 .titulo{
     font-size:1.25em;
     font-weight:bold;
     text-decoration: underline;
+}
+
+.circulo{
+    width:1em;
+    height: 1em;
+    padding: 1em 1.2em;
+    border-radius:50%;
+    background-color: black;
+    border:2px solid #4A4747;
+    margin:1em auto;
+
+}
+
+.menu{
+    background-color: #184B00;
+    padding:0px;
+    color:#FFF;
+    margin:0px;
+    text-align:right;
+}
+.menu li{
+    display:inline;
+}
+
+.menu li a{
+    display:inline-block;
+    padding:1em 1.5em;
+    color:#FFF;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-color: #578741;
 }
