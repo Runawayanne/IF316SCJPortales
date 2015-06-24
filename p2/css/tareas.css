@@ -6,48 +6,93 @@ body{
     font-size:1em;
     padding:1.31em;
 }
-
+h1{
+    margin:1.5em 1em 0.5em 1em;
+}
 .contenedor{
     font-size: 1em;
+    clear: both;
 }
 .tarea{
-    background-color: #43A047;
+    position: relative;
+    float:left;
+    background-color: #B4A916;
     /*padding:1em;*/
     /*padding:2em 1em;*/
     /* trbl  top right bottom left*/
-    padding: 3em 5em 1em 2em;
-    /*border:0.125em dotted black;*/
+
+    /*border:0.125em dotted black;
     border-width: 2px 4px;
     border-style: dashed solid;
     border-color: red black;
-    border-radius: 10px;
+    border-radius: 3px;*/
     margin:0.5em 1em;
-    width:38%;
-    height:220px;
+    width:200px;
+    min-height: 280px;
 }
+.tarea:nth-child(even){
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.tarea:nth-child(3n){
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(- 15deg);
+}
+
 .titulo{
+    display: block;
     font-size:1.25em;
     font-weight:bold;
     text-decoration: underline;
+    padding:2em 1em 1em 1em;
+    background-color:#A49A12;
 }
 
+.prioridad{
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+    padding: 0.5em;
+}
+.abstract{
+    display: block;
+    padding: 1em;
+    font-family: monospace;
+}
+.action{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
 .circulo{
+    position:absolute;
+    top:10px;
+    left:96px;
     width:1em;
     height: 1em;
-    padding: 1em 1.2em;
     border-radius:50%;
-    background-color: black;
-    border:2px solid #4A4747;
-    margin:1em auto;
-
+    background-color:#A49A12;
+    border:1px solid #88811C;
+    box-shadow: 0.15em 0.15em 0.125em #000;
 }
 
 .menu{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
     background-color: #184B00;
     padding:0px;
     color:#FFF;
     margin:0px;
     text-align:right;
+    box-shadow: 0px 0px 1em #000;
+    z-index: 500;
 }
 .menu li{
     display:inline;
