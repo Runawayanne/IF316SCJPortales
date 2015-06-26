@@ -1,0 +1,40 @@
+body{
+  background-color: #DDD;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lucida Grande" "Arial" sans-serif;
+  font-size: 16px;
+  font-size: 100%;
+  font-size: 1em;
+}
+.hero{
+  width: 100%;
+  min-height: 240px;
+  background-color: #777;
+  background-image: url("img/fishes.jpg");
+  background-repeat: no-repeat;
+  background-size:150%;
+  background-position:left;
+  -webkit-transition: 0.5s min-height ease;
+  -moz-transition: 0.5s min-height ease;
+  -o-transition: 0.5s min-height ease;
+  transition: 0.5s min-height ease;
+}
+
+@media screen and (min-width:480px){
+  .hero{
+        background-size:cover;
+        background-position: center;
+        -webkit-transition: 0.5s min-height ease;
+        -moz-transition: 0.5s min-height ease;
+        -o-transition: 0.5s min-height ease;
+        transition: 0.5s min-height ease;
+  }
+}
+@media screen and (min-width:701px){
+  .hero{
+    background-image: url("img/flowers.jpg");
+    min-height: 480px;
+  }
+
+}
