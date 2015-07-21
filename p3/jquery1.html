@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Ejemplo de Jquery</title>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .color1, .color2{
+            display: block;
+            width:300px;
+            height:300px;
+            box-shadow: 0 0 0.125em #000;
+            float:left;
+            max-height:300px;
+            -webkit-transition: 1s max-height;
+            -moz-transition: 1s max-height;
+            -ms-transition: 1s max-height;
+            -o-transition: 1s max-height;
+            transition: 1s max-height;
+        }
+        .color1{
+            background-color: #F00;
+        }
+        .color2{
+            background-color: #0F0;
+        }
+
+        .hidden{
+            max-height: 10px;
+            -webkit-transition: 1s max-height;
+            -moz-transition: 1s max-height;
+            -ms-transition: 1s max-height;
+            -o-transition: 1s max-height;
+            transition: 1s max-height;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="color1">
+        &nbsp;
+    </div>
+    <div class="color2">
+        &nbsp;
+    </div>
+    <div class="color1">
+        &nbsp;
+    </div>
+    <script>
+        $(document).ready( //se dispara la funcion parametro
+            //cuando el documento se ha cargado completamente
+            function(e){
+                //bindings a elementos del DOM
+                $(".color1, .color2").click( // cuando se haga clic
+                    // sobre cualquier elemento que tenga
+                    //la clase color 1 se dispara la funcion
+                    // parametro
+                    function(e){
+                        $(this).toggleClass("hidden");
+                    }
+                ); // color1 click
+            }
+        ); // ready
+    </script>
+  </body>
+</html>
